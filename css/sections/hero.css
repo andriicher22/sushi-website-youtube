@@ -37,24 +37,22 @@
   color: white;
 }
 
-.hero-content{
-    flex: 1.22;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+.hero-content {
+  flex: 1.22;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.hero-content-info{
-    padding: 64px;
-    flex:1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.hero-content-info {
+  padding: 64px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.hero-content-info h1{
-    font-size: 80px;
-    font: 
-
-
+.hero-content-info h1 {
+  font-size: 80px;
+  font-weight: 600px;
 }
