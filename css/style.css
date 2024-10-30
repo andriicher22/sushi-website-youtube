@@ -193,7 +193,6 @@ a {
     font-weight: var(--plus-jakarta-sans);
     color: var(--secondary-color);
     opacity: 0.5;
-    
   }
 
   .hero-content__review {
@@ -202,11 +201,11 @@ a {
   }
 }
 
-/* .flex-center { 
+.flex-center { 
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
 .flex-between {
   display: flex;
