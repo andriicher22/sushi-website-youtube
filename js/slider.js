@@ -5,15 +5,15 @@ const cards = document.querySelectorAll(".popular-foods__card");
 const catalogue = document.querySelector(".popular-foods__catalogue");
 
 //Change the group when the radiobutton is clicked
-function radioButtonFilters(){
-    radioButtons.forEach((radioButton) => {
-      radioButton.addEventListener("change", () => {
-        if (radioButton.checked) {
+function radioButtonFilters() {
+  radioButtons.forEach((radioButton) => {
+    radioButton.addEventListener("change", () => {
+      if (radioButton.checked) {
         //   console.log("Selected value:", radioButton.value);
-          changeActiveGroup(radioButton.value);
-        }
-      });
+        changeActiveGroup(radioButton.value);
+      }
     });
+  });
 }
 
 function changeActiveGroup(category) {
@@ -24,7 +24,7 @@ function changeActiveGroup(category) {
         category ||
       category == "all"
     ) {
-      card.style.display = "block";
+      card.style.display = "flex";
     } else {
       card.style.display = "none";
     }
@@ -32,14 +32,16 @@ function changeActiveGroup(category) {
 }
 
 // Adding the active class to the clicked card
-function activeCardsListener(){
-    cards.forEach((card) => {
-      card.addEventListener("click", () => {
-        console.log("Card was clicked");
+function activeCardsListener() {
+  document.querySelectorAll(".popular-foods__card").forEach((card) => {
+    card.addEventListener("click", () => {
+      console.log("Card was clicked");
+      if (document.querySelector(".active-card")) {
         document.querySelector(".active-card").classList.remove("active-card");
-        card.classList.add("active-card");
-      });
+      }
+      card.classList.add("active-card");
     });
+  });
 }
 
 // Generate new cards when the page loads
@@ -58,10 +60,10 @@ function setTheData() {
       product.price;
     catalogue.appendChild(newCard);
   });
+  activeCardsListener();
 }
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    setTheData();
-    activeCardsListener();
-    radioButtonFilters();
-  });
+  setTheData();
+  radioButtonFilters();
+});
