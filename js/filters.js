@@ -31,18 +31,18 @@ function changeActiveGroup(category) {
   });
 }
 
-// Adding the active class to the clicked card
-function activeCardsListener() {
-  document.querySelectorAll(".popular-foods__card").forEach((card) => {
-    card.addEventListener("click", () => {
-      console.log("Card was clicked");
-      if (document.querySelector(".active-card")) {
-        document.querySelector(".active-card").classList.remove("active-card");
-      }
-      card.classList.add("active-card");
-    });
-  });
-}
+// // Adding the active class to the clicked card
+// function activeCardsListener() {
+//   document.querySelectorAll(".popular-foods__card").forEach((card) => {
+//     card.addEventListener("click", () => {
+//       console.log("Card was clicked");
+//       if (document.querySelector(".active-card")) {
+//         document.querySelector(".active-card").classList.remove("active-card");
+//       }
+//       card.classList.add("active-card");
+//     });
+//   });
+// }
 
 // Generate new cards when the page loads
 function setTheData() {
@@ -60,7 +60,7 @@ function setTheData() {
       product.price;
     catalogue.appendChild(newCard);
   });
-  activeCardsListener();
+  
 }
 
 document.addEventListener("DOMContentLoaded", (event) => {
