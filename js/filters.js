@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       newCard.querySelector("h4").textContent = product.name;
       newCard.querySelector(".popular-foods__card-image").src = product.photo;
       newCard.querySelector(".popular-foods__card-price").textContent =
-        product.price;
+        "$" + product.price;
       newCard.querySelector(".popular-foods__card-category").textContent =
         product.category;
       newCard.querySelector(".popular-foods__card-rating p").textContent =
