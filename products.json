@@ -1,0 +1,76 @@
+{
+    "products": [
+      {
+        "id": "001",
+        "name": "California Roll",
+        "price": 12.99,
+        "rating": 4.5,
+        "photo": "assets/sushi-1.png",
+        "description": "Crab meat, avocado, and cucumber wrapped in sushi rice and seaweed",
+        "category": "sushi"
+      },
+      {
+        "id": "002",
+        "name": "Salmon Nigiri",
+        "price": 8.99,
+        "rating": 4.8,
+        "photo": "assets/sushi-2.png",
+        "description": "Fresh salmon slices on hand-pressed sushi rice",
+        "category": "sushi"
+      },
+      {
+        "id": "003",
+        "name": "Spicy Tuna Roll",
+        "price": 13.99,
+        "rating": 4.6,
+        "photo": "assets/sushi-3.png",
+        "description": "Spicy tuna and cucumber wrapped in sushi rice and seaweed",
+        "category": "sushi"
+      },
+      {
+        "id": "004",
+        "name": "Dragon Roll",
+        "price": 16.99,
+        "rating": 4.9,
+        "photo": "assets/sushi-4.png",
+        "description": "Eel and cucumber topped with avocado and eel sauce",
+        "category": "sushi"
+      },
+      {
+        "id": "005",
+        "name": "Tuna Sashimi",
+        "price": 15.99,
+        "rating": 4.7,
+        "photo": "assets/sushi-5.png",
+        "description": "Fresh sliced tuna sashimi",
+        "category": "others"
+      },
+      {
+        "id": "006",
+        "name": "Rainbow Roll",
+        "price": 17.99,
+        "rating": 4.8,
+        "photo": "assets/sushi-6.png",
+        "description": "California roll topped with various fish and avocado",
+        "category": "Special Rolls"
+      },
+      {
+        "id": "007",
+        "name": "Shrimp Tempura Roll",
+        "price": 14.99,
+        "rating": 4.5,
+        "photo": "assets/sushi-7.png",
+        "description": "Crispy shrimp tempura roll with avocado and cucumber",
+        "category": "danngo"
+      },
+      {
+        "id": "008",
+        "name": "Yellowtail Nigiri",
+        "price": 9.99,
+        "rating": 4.6,
+        "photo": "assets/sushi-8.png",
+        "description": "Fresh yellowtail slices on hand-pressed sushi rice",
+        "category": "ramen"
+      }
+    ]
+  }
