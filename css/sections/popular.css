@@ -99,6 +99,26 @@
   color: var(--primary-color);
 }
 
+.popular-foods__products{
+  position: relative;
+}
+.popular-foods__catalogue-cover {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: var(--primary-color);
+
+  transition: all var(--transition-time);
+}
+
+.popular-foods__catalogue-cover.hidden{
+  display: none;
+}
+
 .popular-foods__catalogue {
   margin-top: 64px;
 
@@ -106,48 +126,21 @@
   justify-content: center;
   align-items: flex-end;
 
-  flex-wrap: wrap;
-  gap: 56px;
-}
-
-.popular-foods__button {
-  width: fit-content;
-  display: flex;
-  align-items: center;
-
-  padding: 15px 30px;
-  margin: 80px auto 0;
-
-  font-weight: 500;
-  line-height: 23px;
-  font-family: var(--plus-jakarta-sans);
-  color: white;
-
-  border: none;
-  outline: none;
-  background: var(--secondary-color);
-  border-radius: 64px;
-
-  cursor: pointer;
-}
-
-.popular-foods__button img {
-  width: 14px;
-  height: 14px;
-  object-fit: contain;
-
-  margin-left: 21px;
+  /* flex-wrap: wrap; */
+  gap: 45px;
+  height: 320px;
 }
 
 .popular-foods__card {
   padding: 38px;
-  min-width: 260px;
-
-  height: fit-content;
-
+  
   display: flex;
+  flex: 1;
   align-items: center;
   flex-direction: column;
+
+  height: 100%;
+  max-width: calc(25%);
 
   border-radius: 36px;
   background: rgba(255, 255, 255, 0.05);
@@ -158,6 +151,7 @@
   cursor: pointer;
 }
 
+.popular-foods__card.hidden,
 .popular-foods__card-category {
   display: none;
 }
@@ -229,3 +223,34 @@
   /* font-size: 24px; */
   color: var(--secondary-color);
 }
+
+.popular-foods__button {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+
+  padding: 15px 30px;
+  margin: 80px auto 0;
+
+  font-weight: 500;
+  line-height: 23px;
+  font-family: var(--plus-jakarta-sans);
+  color: white;
+
+  border: none;
+  outline: none;
+  background: var(--secondary-color);
+  border-radius: 64px;
+
+  cursor: pointer;
+}
+
+.popular-foods__button img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+
+  margin-left: 21px;
+}
+
+

@@ -33,6 +33,8 @@
   --color-white: #fff;
 
   --color-creamson: #fff0de;
+
+  --transition-time: 100ms;
 }
 
 * {
@@ -201,7 +203,7 @@ a {
   }
 }
 
-.flex-center { 
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,6 +259,25 @@ a {
 .sushi__hide-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+.text-style-1lines {
+  /* Modern standard approach */
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+
+  overflow: hidden;
+
+  /* Vendor prefixes for line-clamp */
+  -webkit-line-clamp: 1;
+  -moz-line-clamp: 1;
+  line-clamp: 1;
+
+  /* Required for line-clamp to work */
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
 }
 
 /* START: about us media queries */

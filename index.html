@@ -6,7 +6,6 @@
     <link rel="icon" type="image/png" href="./sushi.png" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Shushi restaurant</title>
-    
   </head>
 
   <body>
@@ -116,17 +115,11 @@
         <div class="popular-foods__slider-button">
           <input
             type="radio"
-            id="food-filter"
+            id="sushi"
             name="food-filter"
-            value="all"
+            value="sushi"
             checked
           />
-          <div class="popular-foods__slider-button-text">
-            <label for="all">All</label>
-          </div>
-        </div>
-        <div class="popular-foods__slider-button">
-          <input type="radio" id="sushi" name="food-filter" value="sushi" />
           <div class="popular-foods__slider-button-text">
             <img src="assets/sushi-9.png" alt="sushi 9" />
             <label for="sushi">Sushi</label>
@@ -160,61 +153,33 @@
           </div>
         </div>
       </form>
+      <div class="popular-foods__products">
+        <div class="popular-foods__catalogue" data-aos="fade-up">
+          <!-- Food card template -->
+          <template id="food-card">
+            <article class="popular-foods__card">
+              <img
+                src="assets/sushi-12.png"
+                alt="sushi-12"
+                class="popular-foods__card-image"
+              />
+              <h4 class="popular-foods__card-title text-style-1lines">
+                Chezu sushi
+              </h4>
+              <div class="popular-foods__card-details flex-between">
+                <div class="popular-foods__card-rating">
+                  <img src="assets/star.svg" alt="star" />
+                  <p>4.9</p>
+                </div>
 
-      <div class="popular-foods__catalogue" data-aos="fade-up">
-        <article class="popular-foods__card">
-          <img
-            src="assets/sushi-12.png"
-            alt="sushi-12"
-            class="popular-foods__card-image"
-          />
-          <h4 class="popular-foods__card-title">Chezu sushi</h4>
-          <div class="popular-foods__card-details flex-between">
-            <div class="popular-foods__card-rating">
-              <img src="assets/star.svg" alt="star" />
-              <p>4.9</p>
-            </div>
-
-            <p class="popular-foods__card-price">$21</p>
-          </div>
-          <p class="popular-foods__card-category">category</p>
-        </article>
-<!-- 
-        <article class="popular-foods__card active-card">
-          <img
-            src="assets/sushi-11.png"
-            alt="sushi-11"
-            class="popular-foods__card-image"
-          />
-          <h4 class="popular-foods__card-title">Original sushi</h4>
-          <div class="popular-foods__card-details flex-between">
-            <div class="popular-foods__card-rating">
-              <img src="assets/star.svg" alt="star" />
-              <p>5.0</p>
-            </div>
-
-            <p class="popular-foods__card-price">$19</p>
-          </div>
-        </article>
-
-        <article class="popular-foods__card">
-          <img
-            src="assets/sushi-10.png"
-            alt="sushi-10"
-            class="popular-foods__card-image"
-          />
-          <h4 class="popular-foods__card-title">Ramen Legend</h4>
-          <div class="popular-foods__card-details flex-between">
-            <div class="popular-foods__card-rating">
-              <img src="assets/star.svg" alt="star" />
-              <p>4.7</p>
-            </div>
-
-            <p class="popular-foods__card-price">$13</p>
-          </div>
-        </article> -->
+                <p class="popular-foods__card-price">$21</p>
+              </div>
+              <p class="popular-foods__card-category">category</p>
+            </article>
+          </template>
+        </div>
+        <div class="popular-foods__catalogue-cover hidden"></div>
       </div>
-
       <button class="popular-foods__button">
         Explore Food
         <img src="assets/arrow-right.svg" alt="arrow-right " />

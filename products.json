@@ -71,6 +71,16 @@
         "photo": "assets/sushi-8.png",
         "description": "Fresh yellowtail slices on hand-pressed sushi rice",
         "category": "ramen"
+      },
+      {
+        "id": "008",
+        "name": "Udon ",
+        "price": 9.99,
+        "rating": 4.6,
+        "photo": "assets/sushi-9.png",
+        "description": "Fresh yellowtail slices on hand-pressed sushi rice",
+        "category": "udon"
       }
     ]
+    
   }
