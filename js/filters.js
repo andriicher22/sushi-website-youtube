@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
           isAnimating = true;
           changeActiveGroup(radioButton.value);
           runCoverAnimation();
-
+          radioButton.value;
           // Reset flag after animation complete
           setTimeout(() => {
             isAnimating = false;
@@ -38,12 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
    * @param {string} category - The new category
    */
   function changeActiveGroup(category) {
-    console.log("CATEGORY", category);
     const list = document.querySelectorAll(".popular-foods__card");
     list.forEach((card) => {
-      console.log(card.querySelector(".popular-foods__card-category").textContent == category);
-      console.log("card: ", card.querySelector(".popular-foods__card-category").textContent);
-      console.log("category to fileter: ", category);
       if (
         card.querySelector(".popular-foods__card-category").textContent ==
         category
@@ -73,18 +69,11 @@ document.addEventListener("DOMContentLoaded", () => {
         product.price;
       catalogue.appendChild(newCard);
     });
-    console.log("render finished")
     changeActiveGroup(findCheckedButton());
   }
 
-
   function findCheckedButton() {
-    radioButtons.forEach((button)=>{
-      if(button.checked == true) {
-        console.log(button.value);  
-        return button.value;
-      }
-    })
+    return Array.from(radioButtons).find((button) => button.checked)?.value;
   }
 
   /**
